@@ -1,6 +1,5 @@
 'use client';
 import React, { useState } from 'react';
-import Image from 'next/image';
 import { Heart } from 'lucide-react';
 
 const ProductCard = () => {
@@ -11,13 +10,10 @@ const ProductCard = () => {
       <figure className="relative">
         <section className="relative h-[300px] bg-gradient-to-r from-[#5e3ca4] to-[#d3b7f5] flex items-center justify-center rounded-t-2xl overflow-hidden">
           <span className="absolute inset-0 bg-gradient-to-r from-[#6a44b8] to-[#e4d4f9] opacity-60 rounded-t-2xl"></span>
-          <Image
+          <img
             src="https://pngimg.com/uploads/running_shoes/running_shoes_PNG5816.png"
             alt="Nike Running Shoe"
-            width={300}
-            height={224} // Ajusta según tu diseño para que se vea bien
-            className="object-contain absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -scale-x-100 -rotate-12 drop-shadow-[0_25px_40px_rgba(0,0,0,0.5)]"
-            priority={true}
+            className="h-56 object-contain absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -scale-x-100 -rotate-12 drop-shadow-[0_25px_40px_rgba(0,0,0,0.5)]"
           />
           <button
             className={`absolute top-4 right-4 p-2 rounded-full transition-all z-10 ${
